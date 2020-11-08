@@ -1,0 +1,110 @@
+:root {
+    --main: #4285F4;
+}
+
+body {
+    background: linear-gradient(45deg, rgba(66, 183, 245, 0.8) 0%, rgba(66, 245, 189, 0.4) 100%) no-repeat;
+    min-height: 1000px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Lato, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    width: 40%;
+    min-height: 300px;
+    background: #fff;
+    display:flex;
+    flex-direction: row;
+    margin: 20vh auto;
+    box-shadow: 0 0 50px rgba(0,0,0,.5);
+    border-radius: 20px;
+}
+
+header {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    order: 0;
+    background: var(--main);
+    border-radius: 20px 0 0 20px;
+    justify-content: center;
+    color: #ffffff;
+    font-family: "Roboto Thin", Roboto, sans-serif;
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 24px;
+    margin: 5px;
+}
+
+h2 {
+    font-size: 14px;
+    margin: 5px;
+    padding: 5px;
+    background: #ffffff;
+    color: var(--main);
+    border-radius: 5px;
+}
+
+
+.login {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+}
+
+.login form {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#sign {
+    display: flex;
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+label {
+    font-family: "Roboto Medium", sans-serif;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    font-size: 11px;
+    letter-spacing: .2em;
+    line-height: 20px;
+}
+
+#login, #password {
+    margin-bottom: 2px;
+    padding: 5px;
+    border: 0;
+    border-bottom: #eee 2px solid;
+    outline: 0;
+    transition: 2s all;
+}
+
+#login:hover, #password:hover {
+    border-bottom: var(--main) 2px solid;
+}
+
+#sign {
+    margin-top: 10px;
+    background: var(--main);
+    border: 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: "Roboto Medium", Roboto sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+}

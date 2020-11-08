@@ -1,0 +1,166 @@
+:root {
+    --main: #4285F4;
+    --gradient: linear-gradient(45deg, rgba(66, 183, 245, 0.8) 0%, rgba(66, 245, 189, 0.4) 100%);
+    --babyblue: rgba(66, 183, 245, 0.8);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    padding:0;
+    background: #eeeeee;
+    font-family: Lato, Roboto, sans-serif;
+}
+
+
+#top {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+    justify-content: left;
+    height: 130px;
+    background: #eeeeee;
+    color: #000000;
+    border-bottom: 1px solid #ffffff;
+}
+
+h1 {
+    display: flex;
+    margin: 0;
+    padding-left: 20px;
+    align-self: center;
+    box-sizing: border-box;
+    justify-self: left;
+    transition: all 1s;
+    width: 338px;
+    height: 128px;
+    background: url(_i/logo.jpg);
+}
+
+
+h1:hover {
+    margin-left: 40px;
+}
+
+#user {
+    width: 25%;
+    background:var(--babyblue);
+    align-self: flex-end;
+    box-sizing: border-box;
+    justify-content: center;
+    display: inline-flex;
+    order: 1;
+    height: 75px;
+    justify-self: flex-end;
+    transition: 2s all;
+}
+
+#user a {
+    color: #ffffff;
+    transition: 5s all;
+    text-decoration: underline;
+}
+
+#user a:hover {
+    text-decoration: none;
+}
+
+#user strong {
+    padding-right: 5px;
+}
+
+
+#user p {
+    display: flex;
+    align-self: center;
+    padding: 5px;
+    color: #ffffff;
+    font-family: Lato, Helvetica, sans-serif;
+    font-size: 12px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+
+
+#container {
+    margin: 0;
+    width: 100%;
+    min-height: 1000px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+#left-bar {
+    background: #333333;
+    width: 25%;
+    height: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    min-height: 500px;
+    margin: 0;
+}
+
+#left-bar hr {
+    border: 0;
+    background: #555;
+    height: 1px;
+    width: 50%;
+}
+
+#content {
+    width: 75%;
+    min-height: 500px;
+    height: 100%;
+    background: #eeeeee;
+    margin: 0;
+}
+
+#hidden {
+    width: 50px;
+    background: var(--babyblue);
+    align-self: flex-end;
+    box-sizing: border-box;
+    justify-content: center;
+    display: inline-flex;
+    height: 75px;
+    border-radius: 15px 0 0 0;
+    justify-self: flex-end;
+    order: 1;
+}
+
+.hide {
+    position: absolute;
+    right: 0;
+}
+
+.fas {
+    color: #ffffff;
+    font-size: 24px;
+    align-self: center;
+    padding: 10px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+
+h3 {
+    font-family: "Roboto Thin", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+main > * {
+    margin: 0 5px;
+}
+
+.side-menu li {
+    list-style: none;
+    color: #fff;
+}
+
+#gabinety_list, #grafiki_list, #lekarze_list {
+    display: none;
+}
