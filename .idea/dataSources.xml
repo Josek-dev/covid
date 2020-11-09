@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="covid@localhost" uuid="aaf6ffc9-3a0c-4dc1-85be-1c7c1be01952">
+      <driver-ref>mariadb</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mariadb://localhost:3306/covid</jdbc-url>
+    </data-source>
+  </component>
+</project>
